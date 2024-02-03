@@ -1,0 +1,8 @@
+<table>
+<tr>
+<td><img src="huaweip20pro.png" width="300" height="300"><br><b>Huawei p 20 pro - 128 GB
+</b><form><input type="button"
+<input type="signup" value="Log In">
+</form></td>
+</tr>
+</table>

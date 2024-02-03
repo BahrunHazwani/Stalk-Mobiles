@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STARK MOBILES</title>
+</head>
+
+<style>
+
+ul{
+  list-style: none;
+  margin:50;
+  padding:80;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+float:left;
+}
+li a, .dropbtn {
+ display: inline-block;
+ color:white;
+ text-align: center;
+ padding: 20px 40px;
+ text-decoration: none;
+
+}
+li a:hover, .dropdown:hover .dropbtn{
+  background-color: #33FCFF;
+}
+li.dropdown {
+ display: inline-block;
+}
+.dropdown-content{
+ display: none;
+position: absolute;
+background-color: white;
+min-width: 200px;
+box-shadow: 0px8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px:
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: blue}
+
+.dropdown:hover .dropdown-content 
+{display: block;}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 70px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+</style>
+</head>
+<body background="whitegif.gif">
+<center> <a href="index.html"><img src="logo.gif" width="300" height="300"></a></center>
+<br><br>
+<ul>
+
+<li><a href="iphone.html">IPhone</a></li>
+<li><a href="samsung.html">Samsung</a></li>
+<li><a href="huawei.html">Huawei</a></li>
+<li><a href="vivo.html">Vivo</a></li>
+<li><a href="oppo.html">Oppo</a></li> 
+</ul>
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" id="about"><font size="3">HOME</font></a>
+  <a href="aboutus.html" id="blog"><font size="3">ABOUT US</font></a>
+  <a href="contactus.html" id="projects"><font size="3">CONTACT US</font></a>
+  <a href="signlog.html"id="contact"><font size="3">SIGN UP/LOG IN</font></a>
+</div>
+</div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+<center><img src="oppogif.gif" style="width:70%"></center>.
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="iphonegif.gif" style="width:50%"></center>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="vivogif.gif" style="width:50%"></center>
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="huaweigif.gif" style="width:70%"></center>
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="samsunggif.gif" style="width:70%"></center>
+  <div class="text"></div>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ <span class="dot"></span>
+ <span class="dot"></span>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every  5 seconds
+}
+</script>
+<br>
+<table>
+<tr>
+<td><a href="vivo.html"><img src="vivov9.jpg" width="200" height="380"></a><br><b><font color="meroon">Vivo V 9</b>
+</font></b><p><b><font color="red">Price:RM 1099.00</b></font></p><br><br>
+<a href="vivo.html"><font color="meroon"><b>WANT TO KNOW MORE!</font></b></a>
+</td>
+<br>
+<td><a href="iphone.html"><img src="iphone7plus.jpg" width="200" height="380"></a><br><b><font color="meroon">Iphone 7 Plus 128 GB
+</font></b><p><b><font color="red">Price: RM 2299.00</b></font></p><br><br>
+<a href="iphone.html"><font color="meroon"><b>WANT TO KNOW MORE!</b></font></a>
+</td>
+<br>
+<td><a href="samsung.html"><img src="galaxym10.jpg" width="300" height="400"></a><br><b><font color="meroon">Galaxy M 10
+</font></b><p><b><font color="red">Price:RM 2099.00</b></font></p><br><br>
+<a href="samsung.html"><font color="meroon"><b>WANT TO KNOW MORE!</b></font></a>
+</td>
+<br>
+<td><a href="huawei.html"><img src="huaweip20pro.png" width="300" height="420"></a><br><b><font color="meroon">Huawei P20 pro - 128 GB
+</font></b><p><b><font color="red">Price:RM 3499.00</b></font></p><br><br>
+<a href="huawei.html"><font color="meroon"><b>WANT TO KNOW MORE!</font></b></a>
+</td>
+<br>
+<td><a href="oppo.html"><img src="oppoa5s.jpg" width="300" height="400"><br><b></a><font color="meroon">Oppo a 5 s
+</font></b><p><b><font color="red">Price:RM 2099.00</b></font></p><br><br>
+<a href="oppo.html"><font color="meroon"><b>WANT TO KNOW MORE!</b></font></a>
+</td>
+</tr>
+</table>
+<br>
+<footer>
+        <center><small><b><font color="white">&copy; 2019 STARK MOBILES All Rights Reserved</font></b></small><center>
+</footer>
+</body>
+</html>
+

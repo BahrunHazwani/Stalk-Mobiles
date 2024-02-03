@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up/Log in</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #FFC300;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+</style>
+</head>
+<body background="logbg.jpg">
+<center> <a href="index.html"><img src="logo.gif" width="300" height="300"></a></center>
+<br><br>
+<form action="account.html" style="border:1px solid #ccc">
+  
+<div class="container">
+    <h2><font color="white">Sign up Form</font></h2>
+    <p><font color="white">If you did not have a account, please fill in this form to create an account.</p></font>
+    <hr>
+
+    <label for="email"><b><font color="white">Email</b></label></font>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b><font color="white">Password</b></label></font>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b><font color="white">Repeat Password</b></label></font>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <br>
+    <label>
+     <font color="white"> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label></font>
+    
+  
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button><br>
+      
+     
+    </div>
+  </div>
+</form>
+
+
+
+<form action="account.html">
+  <h2><font color="white">Log in Form</font></h2>
+  <div class="container">
+    <label for="uname"><b><font color="white">Username</b></label></font>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b><font color="white">Password</b></label></font>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <p>
+      <font color="white"><input type="checkbox" checked="checked" name="remember"> Remember me
+    </p>
+  </div>
+
+  <div class="container" style="background-color:black">
+    <label class="psw"><b><font color="white">Forgot </font></b><a href="sry.html">password?</a></label>
+  </div>
+</form>
+<br>
+<center> <a href="index.html"><img src="back.png" width="80" height="40"></a></center>
+<br>
+<footer>
+        <center><small><b><font color="white">&copy; 2019 STARK MOBILES All Rights Reserved</font></b></small><center>
+</footer>
+</body>
+</html>
